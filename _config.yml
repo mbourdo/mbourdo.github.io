@@ -1,3 +1,6 @@
 theme: jekyll-theme-minimal
 title: Michelle's Portfolio
 description: Michelle Bourdon's Personal Porfolio 
+
+# Additional settings
+include: ["_pages", "_posts"]

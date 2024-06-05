@@ -6,10 +6,15 @@ title: Education
 # Education
 
 ## Bachelor of Science in Computer Science
-- **University**: Example University
-- **Year**: 2020
-- **Relevant Coursework**: Algorithms, Data Structures, Software Engineering, Database Systems
+- **University**: Western University
+- **Graduation**: Expected Graduation Spring 2025
+- **Awards**: Western Scholarship of Distinction (enterence), Dean's Honor List
+- **Coursework**: Algorithm Design, Data Structures, Databases, Several Programming Languages
+- **Clubs/Activities**: Western Investment Club, UWO Cancer Awareness Society, Ivey Case Competitions, SheHacks Hackathons
+- **Expected GPA**: 3.7/4.0
 
-## Certifications
-- **Certified Data Scientist**: Issued by XYZ Institute
-- **AWS Certified Solutions Architect**: Issued by Amazon
+## Wellesley High School Diploma
+- **Graduation**: Graduated Spring 2021
+- **Activities**: Varsity Ice Hockey, Varsity Track & Field 
+- **GPA**: 4.9/5.0
+- **SAT**: 99th percentile

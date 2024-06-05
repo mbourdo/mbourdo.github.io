@@ -9,7 +9,7 @@ body {
 header {
     background-color: #333; /* Dark grey for header background */
     color: white;
-    padding: 10px 0;
+    padding: 10px 0 30px 0;
     text-align: center;
     border-bottom: 3px solid #444; /* Slightly darker grey for border */
 }
@@ -65,32 +65,14 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
-    color: #444; /* Medium grey for h2 */
+    font-size: 1.75em;
+    color: #515050; /* Medium grey for h2 */
     margin-top: 1em;
 }
 
 h3 {
-    font-size: 1.75em;
-    color: #555; /* Slightly lighter grey for h3 */
-    margin-top: 1em;
-}
-
-h4 {
     font-size: 1.5em;
-    color: #666; /* Lighter grey for h4 */
-    margin-top: 1em;
-}
-
-h5 {
-    font-size: 1.25em;
-    color: #777; /* Even lighter grey for h5 */
-    margin-top: 1em;
-}
-
-h6 {
-    font-size: 1em;
-    color: #888; /* Light grey for h6 */
+    color: #555; /* Slightly lighter grey for h3 */
     margin-top: 1em;
 }
 

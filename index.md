@@ -15,5 +15,5 @@ Here you can add some information about yourself or your project.
 
 Below are some of my latest blog posts:
 
-- [First Post](first-post.md)
-- [Second Post](second-post.md)
+- [First Post](2024-06-05-Test.md)
+- [Second Post](2024-06-06-second-post.md)

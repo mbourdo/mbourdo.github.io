@@ -3,17 +3,17 @@ layout: default
 title: Home
 ---
 
-# Welcome to My GitHub Pages Site
+# Home
 
-This is the home page of my GitHub Pages site.
+Home page
 
-## About Me
+## Resume
 
-Here you can add some information about yourself or your project.
+Add resume here later
 
-## Blog
+## Projects
 
-Below are some of my latest blog posts:
+Below are some of my latest projects:
 
 - [First Post](2024-06-05-Test.md)
 - [Second Post](2024-06-06-second-post.md)

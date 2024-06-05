@@ -5,7 +5,7 @@ title: Education
 
 # Education
 
-## Bachelor of Science in Computer Science
+## UWO Bachelor of Science in Computer Science
 - **University**: Western University
 - **Graduation**: Expected Graduation Spring 2025
 - **Awards**: Western Scholarship of Distinction (enterence), Dean's Honor List

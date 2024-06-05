@@ -16,5 +16,10 @@ title: Education
 ## Wellesley High School Diploma
 - **Graduation**: Graduated Spring 2021
 - **Activities**: Varsity Ice Hockey, Varsity Track & Field 
-- **GPA**: 4.9/5.0
+- **GPA**:4.9/5.0
 - **SAT**: 99th percentile
+
+## Finance Research Program
+- **Program**: Boston Leadership Insitute
+- **Year**: Summer 2021
+- **Focus**: Applying mathematical concepts to capital markets

@@ -28,6 +28,7 @@ header p {
     margin: 0;
     font-size: 1.2em;
     color: #ccc;
+    padding-bottom: 20px; /* Add padding to the bottom for spacing */
 }
 
 nav {

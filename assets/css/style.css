@@ -17,11 +17,13 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5em;
+    color: #333; /* Change to dark grey */
 }
 
 header p {
     margin: 0;
     font-size: 1.2em;
+    color: #555; /* Light grey for description */
 }
 
 nav ul {

@@ -9,7 +9,7 @@ About me
 
 ## Resume
 
-Click resume in the nav bar to view my latest projects
+Click the Education and Work Expirence tabs
 
 ## Projects
 

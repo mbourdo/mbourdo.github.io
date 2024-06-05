@@ -3,18 +3,17 @@ layout: default
 title: Projects
 ---
 
-# My Projects
+# Projects
 
-Here you can list and describe your projects. You can include links, descriptions, and any relevant details.
 
-## Project 1
+## Title
 
-- **Name**: Example Project
-- **Description**: This is a brief description of the project.
+- **Name**: Project
+- **Description**: Description 
 - **Link**: [Project Link](http://example.com)
 
-## Project 2
+## Title
 
-- **Name**: Another Project
-- **Description**: This is another brief description of a project.
+- **Name**: Project
+- **Description**: Description 
 - **Link**: [Project Link](http://example.com)

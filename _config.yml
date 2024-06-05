@@ -1,6 +1,11 @@
 theme: jekyll-theme-minimal
 title: Michelle's Portfolio
 description: Michelle Bourdon's Personal Porfolio 
+url: "https://mbourdo.github.io" # the base hostname & protocol for your site
 
 # Additional settings
 include: ["_pages", "_posts"]
+
+# Build settings
+markdown: kramdown
+permalink: pretty

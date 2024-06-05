@@ -3,27 +3,27 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f9; /* Light grey background for contrast */
+    background-color: #f4f4f4; /* Light grey background */
 }
 
 header {
-    background-color: #283593; /* Deep blue for header background */
+    background-color: #333; /* Dark grey for header background */
     color: white;
     padding: 10px 0;
     text-align: center;
-    border-bottom: 3px solid #1a237e; /* Slightly darker blue for border */
+    border-bottom: 3px solid #444; /* Slightly darker grey for border */
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    color: #ffffff; /* White for the title */
+    color: #fff; /* White for the title */
 }
 
 header p {
     margin: 0;
     font-size: 1.2em;
-    color: #c5cae9; /* Light grey for description */
+    color: #ccc; /* Light grey for description */
 }
 
 nav ul {
@@ -32,7 +32,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #3949ab; /* Medium blue for navbar */
+    background-color: #444; /* Medium grey for navbar */
 }
 
 nav ul li {
@@ -47,7 +47,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #1a237e; /* Darker blue on hover */
+    background-color: #555; /* Darker grey on hover */
 }
 
 main {
@@ -56,40 +56,41 @@ main {
     margin: 20px auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: calc(100vh - 140px); /* Ensures the main content area is tall enough to push the footer down */
 }
 
 h1 {
     font-size: 2.5em;
-    color: #283593; /* Deep blue for h1 */
+    color: #333; /* Dark grey for h1 */
 }
 
 h2 {
     font-size: 2em;
-    color: #3949ab; /* Medium blue for h2 */
+    color: #444; /* Medium grey for h2 */
     margin-top: 1em;
 }
 
 h3 {
     font-size: 1.75em;
-    color: #5c6bc0; /* Lighter blue for h3 */
+    color: #555; /* Slightly lighter grey for h3 */
     margin-top: 1em;
 }
 
 h4 {
     font-size: 1.5em;
-    color: #7986cb; /* Even lighter blue for h4 */
+    color: #666; /* Lighter grey for h4 */
     margin-top: 1em;
 }
 
 h5 {
     font-size: 1.25em;
-    color: #9fa8da; /* Lightest blue for h5 */
+    color: #777; /* Even lighter grey for h5 */
     margin-top: 1em;
 }
 
 h6 {
     font-size: 1em;
-    color: #c5cae9; /* Light grey-blue for h6 */
+    color: #888; /* Light grey for h6 */
     margin-top: 1em;
 }
 
@@ -99,12 +100,12 @@ p {
 }
 
 footer {
-    background-color: #283593;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
-    border-top: 3px solid #1a237e;
-    position: absolute;
-    bottom: 0;
+    border-top: 3px solid #444;
     width: 100%;
+    position: relative;
+    clear: both;
 }

@@ -5,15 +5,12 @@ title: Home
 
 # Home
 
-Home page
+About me
 
 ## Resume
 
-Add resume here later
+Click resume in the nav bar to view my latest projects
 
 ## Projects
 
-Below are some of my latest projects:
-
-- [First Post](2024-06-05-Test.md)
-- [Second Post](2024-06-06-second-post.md)
+Click projects in the nav bar to view my latest projects

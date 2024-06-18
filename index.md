@@ -15,80 +15,54 @@ Click the Education and Work Expirence tabs
 
 Click projects in the nav bar to view my latest projects
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Charts with Google Sheets</title>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    // Load the Visualization API and the corechart package.
+    google.charts.load('current', {'packages':['corechart']});
 
-      
-var options = {
-    series: [{
-    data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
-}],
-    chart: {
-    type: 'bar',
-    height: 380
-},
-plotOptions: {
-    bar: {
-    barHeight: '100%',
-    distributed: true,
-    horizontal: true,
-    dataLabels: {
-        position: 'bottom'
-    },
-    }
-},
-colors: ['#33b2df', '#546E7A', '#d4526e', '#13d8aa', '#A5978B', '#2b908f', '#f9a3a4', '#90ee7e',
-    '#f48024', '#69d2e7'
-],
-dataLabels: {
-    enabled: true,
-    textAnchor: 'start',
-    style: {
-    colors: ['#fff']
-    },
-    formatter: function (val, opt) {
-    return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
-    },
-    offsetX: 0,
-    dropShadow: {
-    enabled: true
-    }
-},
-stroke: {
-    width: 1,
-    colors: ['#fff']
-},
-xaxis: {
-    categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
-    'United States', 'China', 'India'
-    ],
-},
-yaxis: {
-    labels: {
-    show: false
-    }
-},
-title: {
-    text: 'Custom DataLabels',
-    align: 'center',
-    floating: true
-},
-subtitle: {
-    text: 'Category Names as DataLabels inside bars',
-    align: 'center',
-},
-tooltip: {
-    theme: 'dark',
-    x: {
-    show: false
-    },
-    y: {
-    title: {
-        formatter: function () {
-        return ''
-        }
-    }
-    }
-}
-};
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChart);
 
-var chart = new ApexCharts(document.querySelector("#chart"), options);
-chart.render();
+    function drawChart() {
+      // Define the query to get data from Google Sheets
+      var queryString = encodeURIComponent('SELECT A, B');
+
+      // Create a query to fetch data from Google Sheets
+      var query = new google.visualization.Query(
+          'https://docs.google.com/spreadsheets/d/1QRRGK9xn1eGplvarZjEGhb7VpIGn2vNQCuuAkLimBOs/gviz/tq?sheet=Sheet1&tq=' + queryString);
+
+      // Send the query with a callback function
+      query.send(handleQueryResponse);
+    }
+
+    function handleQueryResponse(response) {
+      if (response.isError()) {
+        console.log('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        return;
+      }
+
+      var data = response.getDataTable();
+
+      // Create the chart options
+      var options = {
+        title: 'My Horizontal Bar Chart',
+        hAxis: {title: 'Value'},
+        vAxis: {title: 'Category'},
+        bars: 'horizontal'
+      };
+
+      // Instantiate and draw the chart
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
+</head>
+
+<body>
+  <div id="chart_div" style="width: 900px; height: 500px;"></div>
+</body>
+</html>

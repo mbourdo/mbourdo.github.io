@@ -8,18 +8,21 @@
     google.charts.setOnLoadCallback(drawChart);
 
     function drawChart() {
+      console.log("Loading Google Chart...");
       var queryString = encodeURIComponent('SELECT A, B');
       var query = new google.visualization.Query(
           'https://docs.google.com/spreadsheets/d/1QRRGK9xn1eGplvarZjEGhb7VpIGn2vNQCuuAkLimBOs/gviz/tq?sheet=Sheet1&tq=' + queryString);
+      
       query.send(handleQueryResponse);
     }
 
     function handleQueryResponse(response) {
       if (response.isError()) {
-        console.log('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        console.error('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
         return;
       }
 
+      console.log("Data fetched successfully.");
       var data = response.getDataTable();
 
       var options = {
@@ -39,6 +42,7 @@
 
       var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
       chart.draw(data, options);
+      console.log("Chart drawn successfully.");
     }
   </script>
 </head>
